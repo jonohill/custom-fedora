@@ -11,4 +11,8 @@ RUN dnf install -y \
     distrobox \
     gnome-tweaks
 
+COPY --chown=root:root root/etc /etc
+
+RUN systemctl --root=/ enable rpm-ostreed-automatic.timer
+
 RUN ostree container commit
