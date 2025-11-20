@@ -2,7 +2,7 @@ ARG IMAGE_BASE=quay.io/fedora-ostree-desktops/silverblue
 
 # This points to the very latest (usually prerelease)
 # It's mainly here to cause rebuilds when renovate updates it
-ARG IMAGE_TAG=43@sha256:6de3bcaa7d67094932a376a38c307290ece36200bd88d328622fcd6bfc687df8
+ARG IMAGE_TAG=43@sha256:103efee0599281d94fcdd7c439405fa2f41b232bfb7a23113829107688a4aaec
 
 FROM ${IMAGE_BASE}:${IMAGE_TAG}
 
